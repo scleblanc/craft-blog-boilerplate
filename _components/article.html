@@ -1,0 +1,8 @@
+{% set accent = entry.article.type("accentColor").first().color|default(null) %}
+{% for artBlock in entry.article %}
+	{% if artBlock.type != "accentColor" %}
+	{% include "_components/article-blocks/" ~ artBlock.type %}
+	{% endif %}
+{% endfor %}
+<div class="clearfix"></div>
+{% endif %}

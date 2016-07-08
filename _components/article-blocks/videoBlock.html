@@ -1,0 +1,13 @@
+<div class="videoBlock art-{{artBlock.position}}">
+	{% if artBlock.video[0]|length %}
+	<video muted loop autoplay >
+		<source data-src="{{ artBlock.video[0].url() }}" type="video/mp4">
+		<source data-src="{{ artBlock.video[0].url() }}" type="video/mov">
+	</video>
+	{% elseif artBlock.embedSource|length %}
+		{{artBlock.embedSource|raw}}
+	{% endif %}
+	{% if artBlock.caption|length %}
+		<p class="videoBlockCaption">{{artBlock.caption}}</p>
+	{% endif %}
+</div>

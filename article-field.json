@@ -1,0 +1,145 @@
+{
+  "assets": [],
+  "categories": [],
+  "fields": {
+    "Article": {
+      "article": {
+        "name": "Article",
+        "context": "global",
+        "instructions": "",
+        "translatable": 0,
+        "type": "Matrix",
+        "settings": {
+          "maxBlocks": null
+        },
+        "blockTypes": {
+          "bodyText": {
+            "name": "Body Text",
+            "fields": {
+              "text": {
+                "name": "Text",
+                "required": 0,
+                "translatable": 0,
+                "type": "RichText",
+                "instructions": ""
+              }
+            }
+          },
+          "heading": {
+            "name": "Heading",
+            "fields": {
+              "text": {
+                "name": "Text",
+                "required": 0,
+                "translatable": 0,
+                "type": "PlainText",
+                "instructions": ""
+              }
+            }
+          },
+          "videoBlock": {
+            "name": "Video Block",
+            "fields": {
+              "video": {
+                "name": "Video",
+                "required": 0,
+                "translatable": 0,
+                "type": "Assets",
+                "instructions": ""
+              },
+              "caption": {
+                "name": "Caption",
+                "required": 0,
+                "translatable": 0,
+                "type": "PlainText",
+                "instructions": ""
+              },
+              "position": {
+                "name": "Position",
+                "required": 0,
+                "translatable": 0,
+                "type": "PositionSelect",
+                "instructions": ""
+              },
+              "embedSource": {
+                "name": "Embed Source",
+                "required": 0,
+                "translatable": 0,
+                "type": "PlainText",
+                "instructions": "If the video is hosted somewhere (Youtube, for instance), use this field."
+              }
+            }
+          },
+          "imageBlock": {
+            "name": "Image Block",
+            "fields": {
+              "image": {
+                "name": "Image",
+                "required": 1,
+                "translatable": 0,
+                "type": "Assets",
+                "instructions": ""
+              },
+              "caption": {
+                "name": "Caption",
+                "required": 0,
+                "translatable": 0,
+                "type": "PlainText",
+                "instructions": ""
+              },
+              "position": {
+                "name": "Position",
+                "required": 0,
+                "translatable": 0,
+                "type": "PositionSelect",
+                "instructions": ""
+              }
+            }
+          },
+          "quoteBlock": {
+            "name": "Quote Block",
+            "fields": {
+              "quote": {
+                "name": "Quote",
+                "required": 0,
+                "translatable": 0,
+                "type": "PlainText",
+                "instructions": ""
+              },
+              "position": {
+                "name": "Position",
+                "required": 0,
+                "translatable": 0,
+                "type": "PositionSelect",
+                "instructions": ""
+              },
+              "byline": {
+                "name": "Byline",
+                "required": 0,
+                "translatable": 0,
+                "type": "PlainText",
+                "instructions": ""
+              }
+            }
+          },
+          "accentColor": {
+            "name": "Accent Color",
+            "fields": {
+              "color": {
+                "name": "color",
+                "required": 0,
+                "translatable": 0,
+                "type": "Color",
+                "instructions": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "globals": [],
+  "sections": [],
+  "contenttabs": [],
+  "tags": []
+}

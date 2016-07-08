@@ -1,0 +1,6 @@
+<div class="imageBlock art-{{artBlock.position}}">
+	<div class="imageBlockImage" style="background-image:url({{artBlock.image[0].url()}})"></div>
+	{% if artBlock.caption is not null %}
+	<p class="imageBlockCaption">{{artBlock.caption}}</p>
+	{% endif %}
+</div>
